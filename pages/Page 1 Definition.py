@@ -1,5 +1,4 @@
 import streamlit as st
-from ipywidgets import interact
 import numpy as np
 import plotly.graph_objects as go
 from typing import Tuple
