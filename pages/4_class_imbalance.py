@@ -92,9 +92,12 @@ def main():
         f"<p color='red'> The ACC decreased by {diff_acc}% </p>", unsafe_allow_html=True
     )
     st.write(
-        "We see that we got a 17% decrease in accuracy. \
-            Whereas we got 7& decrease in acc. \
-            Hence we can say auc captures the model output reliably"
+        "We see that we got a 17% decrease in auc roc. \
+        Whereas we got 7% decrease in acc. \
+        Hence we can say auc captures the model output reliably.\
+        Whenever there is a class imbalance, the auc roc metric will \
+        penalize more on wrong classification of minor class than a simple\
+        acc metric."
     )
 
     st.write("## What if we have more positive samples than negative")
