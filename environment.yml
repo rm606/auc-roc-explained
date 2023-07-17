@@ -1,8 +1,0 @@
-name: streamlit
-channels:
-  - defaults
-dependencies:
-  - python=3.10
-  - pylint
-  - plotly
-prefix: /Users/shivam/miniconda3/envs/streamlit
