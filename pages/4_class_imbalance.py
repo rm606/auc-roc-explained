@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
-from pages.definition import DummyClassifier, make_tpr_fpr, plot2
 from sklearn.metrics import roc_auc_score, accuracy_score
+from utils import *
 
 
 def main():
@@ -120,4 +120,5 @@ def main():
 
 
 st.set_page_config(page_title="Class Imbalance")
+st.sidebar.header("Class Imbalance")
 main()

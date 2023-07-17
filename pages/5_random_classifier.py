@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from pages.definition import DummyClassifier, make_tpr_fpr, plot2
+from utils import *
 
 
 def main():
@@ -42,4 +42,5 @@ def main():
 
 
 st.set_page_config(page_title="Random Classifier")
+st.sidebar.header("Random Classifier")
 main()

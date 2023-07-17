@@ -46,4 +46,5 @@ def main():
 
 
 st.set_page_config(page_title="One Last Bit")
+st.sidebar.header("One Last Bit")
 main()

@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from pages.definition import DummyClassifier, make_tpr_fpr, plot2
+from utils import *
 
 
 def main():
@@ -59,4 +59,5 @@ def main():
 
 
 st.set_page_config(page_title="Back To Reality")
+st.sidebar.header("Back to Reality")
 main()

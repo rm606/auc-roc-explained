@@ -18,7 +18,7 @@ st.write(
     This app aims to address various questions about AUC ROC. 
     It's important to note that this metric is not simple or straightforward, 
     as it encompasses numerous properties of a classifier.
-"""
+    """
 )
 
 st.write("> To get most of this app, go through each section.")
