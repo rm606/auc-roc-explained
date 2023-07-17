@@ -30,17 +30,25 @@ def main():
         Answer: The right one, as it better separates
         the positive and negative labels.
 
-        2. In which image is there a higher probability of a positive sample
-        being positioned to the right of the optimal threshold?
+        2. In which image is there a higher chance of a positive sample
+        being positioned to the right of the optimal threshold? Remember, optimal
+        threshold is one which separates positive and negative sample with high TPR
+        and low FPR.
 
-        Answer: The right one. The threshold aims to maximize
-        the number of positive samples on the right side.
+        Answer: The right one.
 
-        Combining these answers, we can conclude that positive samples
-        tend to have higher model outputs. 
-        Consequently, when ranking based on the model output,
-        randomly chosen positive samples are more likely to be ranked higher
-        than randomly chosen negative samples.
+        Okay, Re read the answers above and once you have done so. Go ahead.
+
+        Let's say I have a very good classifier. This means, that ground truth 
+        positives will be correctly classified. There is only one way to do this,
+        if model gives high probability (which is the model output) to positive examples
+        and low probility to negative examples.
+        If this is the case then, given a randomly chosen positive, and 
+        negative example, the positive example will have high model output 
+        than a negative example.
+
+        So let's say we rank examples with model output, 
+        then positives will be ranked higher than the negatives.
         """
     )
 
