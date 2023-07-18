@@ -87,12 +87,11 @@ def main():
         hence the name "confusion matrix." The matrix is usually presented as follows:
 
         ```
-                    Actual Negative     Actual Positive
-        Predicted   | True Positive  |  False Positive  |
-        Positive    |                |                  |
-        -----------------------------------------------
-        Predicted   | False Negative |  True Negative   |
-        Negative    |                |                  |
+        |                 | Predicted Negative | Predicted Positive |
+        |-----------------|--------------------|--------------------|
+        | Actual Positive | FN                 | TP                 |
+        | Actual Negative | TN                 | FP                 |
+
         ```
 
         The values in each cell of the matrix represent
